@@ -1,0 +1,338 @@
+body{
+    display: flex;
+    background-color: #3D087B;
+    
+    box-sizing: border-box;
+}
+.secone{
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+}
+.sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+    padding-left: 00px;
+    padding-top: 0px;
+}
+.sec2{
+    height: 100vh;
+    padding-left:00px;
+    padding-top: 50px;
+
+}
+.d1{
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    color: #3D087B;
+    align-items: center;
+    
+    
+
+    
+}
+.d2{padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+    align-content: center;
+    align-items: center;
+}
+.d1 img{
+    width: 50px;
+    height: auto;
+    
+}
+.d1 span{
+
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 30px;
+}
+select{
+    border: 0px;
+    color: #3D087B;
+    font-size: 20px;
+margin-left: 40px;
+padding-right: 100px;
+}
+hr{
+    position: relative;
+    right: 249px;
+    transform: rotate(90deg);
+    width: 30px;
+    height: 0px;
+}
+.d3{
+    
+    background-color: white;
+    margin-top: 5px;
+    width: 100%;
+    height: 75px;
+    border-radius: 10px;
+    opacity: 50%;
+    
+    
+    color: rgb(244, 244, 244);
+    box-sizing: border-box;
+    padding-left: 30px;
+    
+}
+.d4{
+    position: absolute;
+    bottom: 80px;
+    right: 900px;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    font-size: 38px;
+    align-items: center;
+    
+    
+}
+.d4::before{
+    content :"GOOD MORNING";
+    animation: fd4 10s linear 0s infinite normal none;
+}
+@keyframes fd4 {
+    0%{
+        content: "GOOD MORNING";
+    }
+    25%{
+        content: "GOOD AFTERNOON";
+    }
+    50%{
+        content: "GOOD EVENING";
+    }
+    75%{
+        content: "GOOD NIGHT";
+    }
+    100%{
+        content: "GOOD MORNING";
+    }
+}
+
+.d5{
+  border: 0;
+  cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    top: 10px;
+    width: 50%;
+    height: 50px;
+    background-image: linear-gradient(
+        to right,
+        #6E54EC,
+        #CB52F8,
+        #FC5EFF,
+        #F1A7C5
+
+    );
+
+}
+.d5:hover{
+        font-size: 0;
+        background-image: linear-gradient(
+        to left,
+        #6E54EC,
+        #CB52F8,
+        #FC5EFF,
+        #F1A7C5
+    );
+
+}
+
+.d5:hover:after{
+    font-size: 25px;
+    content: attr(data-hover);
+    
+        
+}
+.d6{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    color: #CB52F8;
+    font-weight: 500;
+    position: absolute;
+    top: 622px;
+    left: 385px;
+    display: inline-flex;
+    width: 20%;
+    background-color: white;
+    height: 150px;
+    opacity: 70%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.d7{
+    position: absolute;
+    left: 420px;
+    width: 240px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 100%;
+}
+.sectwo{
+   
+    display:flex;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+   justify-content: center ;
+   margin-left: 40px;
+    
+}
+.d8,.d9,.d10{margin-top: 50px;
+    width: 450px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    opacity: 30%;
+
+}
+.d9{
+    position: absolute;
+    top: 40px;
+    opacity: 80%;
+    width: 600px;
+}
+.d10{
+    box-sizing: border-box;
+    padding: 20px;
+    color: #3D087B;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 49%;
+    top: -10px;
+    opacity: 100%;
+    height: 130px;
+    margin-right: 20px;
+}
+.d8{
+    position: absolute;
+    top: 50px;
+}
+.d11{
+    display: flex;
+    width: 49%;
+    height:130px;
+    background-color: white;
+    position: absolute;
+    top: 220px;
+    border-radius: 10px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 48px;
+    color: #3D087B;
+    align-items: center;
+    margin-right: 20px;
+}
+.d12{
+     position: absolute;
+     top: 380px;
+     width: 49%;
+     height: 380px;
+     background-size: cover;
+     background-color: white;
+     border-radius: 10px;
+     margin-right: 20px;
+}
+
+@keyframes fd11{
+    0% {
+        content: "GRAB SOME HEALTHY BREAKFAST!";
+    }
+    25%{
+        content: attr(data-one);
+    }
+    50%{
+        content: "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+        line-height: 40px;
+    }
+    75%{
+        content: "CLOSE YOUR EYES AND GO TO SLEEP";
+    }
+    100%{
+        content: "GOOD NIGHT!!!";
+    }
+}
+.d11::before{
+    content: "GRAB SOME HEALTHY BREAKFAST!!!";
+    animation: fd11 20s ease-in-out 0s infinite normal none;
+}
+
+
+@keyframes fd12 {
+    0%{
+        background-image: url(./111.png);
+    }
+    25%{
+        background-image: url(./Group\ 5183@2x.png);
+    }
+    50%{
+        background-image: url(./Group\ 5194@2x.png);
+    }
+    75%{
+        background-image: url(./lunch_image@2x.png);
+    }
+    100%{
+        background-image: url(./111.png);
+    }
+}
+.d12{
+    background-image: url(./111.png);
+    animation: fd12 20s ease-in 0s infinite normal none;
+}
+.d10 div:last-child::before{
+   
+    content: "AM";
+    
+}
+
+.am{
+    font-size: 45px;
+    font-family: Barlow, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 90px;
+    background-image: url(./AM_svg/AM_svg.png);
+}
+.d13{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color:#8A11BF;
+    width: 100px;
+    height: 100px;
+    background-image: url(./timeline/timeline.png);
+}
+
