@@ -17,7 +17,7 @@
     <section class="secone">
       <section class="sec1">
         <img src="./clock_logo/clock_logo.png" />
-        <div class="d7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, nostrum.</div>
+        
       </section>
       <section class="sec2">
         <div class="d1">
@@ -25,7 +25,7 @@
             <img src="./Clock-Good-Morning/wake_up.svg" /><span
               >Set wake up time</span
             >
-            <select>
+            <select id="wuTime">
               <option>10am-11am</option>
               <option>11am-12pm</option>
               <option>12pm-1pm</option>
@@ -40,7 +40,7 @@
               <option>9pm-10pm</option>
               <option>10pm-11pm</option>
               <option>11pm-12am</option>
-              <option>12am-1am</option>
+              <option>00am-1am</option>
               <option>1am-2am</option>
               <option>2am-3am</option>
               <option>3am-4am</option>
@@ -58,7 +58,7 @@
               >Set lunch time</span
             >
 
-            <select>
+            <select id="luTime">
               <option>10am-11am</option>
               <option>11am-12pm</option>
               <option>12pm-1pm</option>
@@ -73,7 +73,7 @@
               <option>9pm-10pm</option>
               <option>10pm-11pm</option>
               <option>11pm-12am</option>
-              <option>12am-1am</option>
+              <option>00am-1am</option>
               <option>1am-2am</option>
               <option>2am-3am</option>
               <option>3am-4am</option>
@@ -90,7 +90,7 @@
             <img src="./Clock-Good-Morning/nap_time.svg" /><span
               >Set nap time</span
             >
-            <select>
+            <select id="napTime">
               <option>10am-11am</option>
               <option>11am-12pm</option>
               <option>12pm-1pm</option>
@@ -105,7 +105,7 @@
               <option>9pm-10pm</option>
               <option>10pm-11pm</option>
               <option>11pm-12am</option>
-              <option>12am-1am</option>
+              <option>00am-1am</option>
               <option>1am-2am</option>
               <option>2am-3am</option>
               <option>3am-4am</option>
@@ -122,7 +122,7 @@
             <img
               src="./Clock-Good-Morning/istockphoto-1183110954-170667a-removebg-preview.png"
             /><span>Set night time</span>
-            <select>
+            <select id="nightTime">
               <option>10am-11am</option>
               <option>11am-12pm</option>
               <option>12pm-1pm</option>
@@ -137,7 +137,7 @@
               <option>9pm-10pm</option>
               <option>10pm-11pm</option>
               <option>11pm-12am</option>
-              <option>12am-1am</option>
+              <option>00am-1am</option>
               <option>1am-2am</option>
               <option>2am-3am</option>
               <option>3am-4am</option>
@@ -153,11 +153,11 @@
         <div class="d3"></div>
         <div class="d4"></div>
         <span
-          ><button class="d5" data-hover="Party time !!">
+          ><button class="d5" data-hover="Party time !!" onclick="alarm()" ondblclick="location.reload()">
             Set alarm
           </button></span
         >
-        <span class="d6"><div>Wake Up Time : 10AM - 11AM</div><div> Lunch Time : 12PM - 1PM</div><div> Nap Time : 4PM - 5PM</div><div> Night Time : 8PM-9AM</div></span>
+        <span class="d6"><div id="d6_1">Wake Up Time :</div><div id="d6_2"> Lunch Time :</div><div id="d6_3"> Nap Time :</div><div id="d6_4"> Night Time : </div></span>
       </section>
     </section>
     <section class="sectwo">
@@ -165,13 +165,14 @@
       <div class="d9"></div>
       <div class="d10">
         <b>TIME</b>
-        <div class="d13">10 Hours</div>:
-        <div class="d13">00 Mins</div>:
-        <div class="d13">01 Secs</div>      
-        <div class="am"></div>
+        <div class="d13" id="hh">10 Hours</div>:
+        <div class="d13" id="mm">00 Mins</div>:
+        <div class="d13" id="ss">01 Secs</div>      
+        <div  id="apm"></div>
       </div>
       <div class="d11" data-one="CLOSE YOUR EYES AND GO TO SLEEP"></div>
-      <div class="d12"></div>
+      <div class="d12" id="d12"></div>
     </section>
+    <script src="digital.js"></script>
   </body>
 </html>

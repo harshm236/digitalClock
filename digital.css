@@ -94,7 +94,7 @@ hr{
     position: absolute;
     bottom: 80px;
     right: 900px;
-    color: white;
+    color: rgb(3, 2, 3);
     font-family: 'Silkscreen', cursive;
     font-size: 38px;
     align-items: center;
@@ -102,8 +102,8 @@ hr{
     
 }
 .d4::before{
-    content :"GOOD MORNING";
-    animation: fd4 10s linear 0s infinite normal none;
+    content :"";
+    /*animation: fd4 10s linear 0s infinite normal none;*/
 }
 @keyframes fd4 {
     0%{
@@ -249,6 +249,7 @@ hr{
     color: #3D087B;
     align-items: center;
     margin-right: 20px;
+    line-height: 50px;
 }
 .d12{
      position: absolute;
@@ -261,7 +262,7 @@ hr{
      margin-right: 20px;
 }
 
-@keyframes fd11{
+/*@keyframes fd11{
     0% {
         content: "GRAB SOME HEALTHY BREAKFAST!";
     }
@@ -278,14 +279,14 @@ hr{
     100%{
         content: "GOOD NIGHT!!!";
     }
-}
+}*/
 .d11::before{
-    content: "GRAB SOME HEALTHY BREAKFAST!!!";
+    content: "!";
     animation: fd11 20s ease-in-out 0s infinite normal none;
 }
 
 
-@keyframes fd12 {
+/*@keyframes fd12 {
     0%{
         background-image: url(./111.png);
     }
@@ -304,23 +305,25 @@ hr{
 }
 .d12{
     background-image: url(./111.png);
-    animation: fd12 20s ease-in 0s infinite normal none;
+    animation: fd12 20s ease-in 0s infinite normal none;*/
 }
-.d10 div:last-child::before{
+/*.d10 div:last-child::before{
    
     content: "AM";
     
-}
+}*/
 
-.am{
+#apm{
     font-size: 45px;
     font-family: Barlow, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     width: 80px;
     height: 90px;
-    background-image: url(./AM_svg/AM_svg.png);
+   background-image: url(./AM_svg/AM_svg.png);
+   background-color: aqua;
+   border: 5px solid red;
 }
 .d13{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
